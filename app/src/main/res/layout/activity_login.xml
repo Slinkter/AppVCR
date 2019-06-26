@@ -26,7 +26,7 @@
             android:src="@drawable/ic_launcher_background" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/ed_login_email"
+            android:id="@+id/et_mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -45,7 +45,7 @@
             app:met_singleLineEllipsis="false" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/ed_login_pwd"
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -64,7 +64,7 @@
             app:met_singleLineEllipsis="false" />
 
         <CheckBox
-            android:id="@+id/rem_userpass"
+            android:id="@+id/checkbox_session"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -79,6 +79,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnIngresar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -88,6 +89,7 @@
                 android:textSize="12dp" />
 
             <Button
+                android:id="@+id/btnRegistrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

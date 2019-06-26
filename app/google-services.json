@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "65729315035",
+    "firebase_url": "https://vcrapp-993e5.firebaseio.com",
+    "project_id": "vcrapp-993e5",
+    "storage_bucket": "vcrapp-993e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65729315035:android:41511f487bab23d0",
+        "android_client_info": {
+          "package_name": "com.vidrieriachaloreyes.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65729315035-96rvq8jops47383viek5n898riccksun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vidrieriachaloreyes.app",
+            "certificate_hash": "23f8707e8e338799b47b5dba1e9b4cba4054cb68"
+          }
+        },
+        {
+          "client_id": "65729315035-a7lfm3o6d2gahbfaji9bckan938shvot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnnFTKg8DA2A_UanZrZSW7q8SdGRaRAbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65729315035-a7lfm3o6d2gahbfaji9bckan938shvot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

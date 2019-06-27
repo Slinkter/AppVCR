@@ -1,6 +1,7 @@
 package com.vidrieriachaloreyes.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
@@ -59,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Intent ac_registro = new Intent()
             }
         });
 

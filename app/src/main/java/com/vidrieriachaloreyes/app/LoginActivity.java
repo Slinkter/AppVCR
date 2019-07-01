@@ -3,17 +3,25 @@ package com.vidrieriachaloreyes.app;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.nfc.Tag;
 import android.os.Vibrator;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,7 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     //
     private Animation animation;
     private Vibrator vib;
-    private FirebaseAuth auth;
+    private FirebaseAuth mAuth;
+    private FirebaseUser mUser;
     //
     private EditText ed_login_email;
     private EditText ed_login_pwd;
@@ -41,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
         //
+        mAuth = FirebaseAuth.getInstance();
+        //
         animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
         vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         //
@@ -54,21 +65,81 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                if (verificarLogin()) {
+                    String email = ed_login_email.getText().toString();
+                    String pass = ed_login_pwd.getText().toString();
+                    Log.e("mm", email);
+                    Log.e("nn", pass);
+                    gotoMainActivity(email, pass);
+                }
+
+
             }
         });
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent ac_registro = new Intent()
+                Intent goToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(goToRegister);
             }
         });
 
 
-
     }
 
-    // metodo de guardar usuario y contraseña
+    private boolean verificarLogin() {
+        Log.e("verficarLogin", " Start");
+        if (!checkEmail()) {
+            ed_login_email.setAnimation(animation);
+            ed_login_email.startAnimation(animation);
+            vib.vibrate(120);
+            return false;
+        }
+        if (!checkPassword()) {
+            ed_login_pwd.setAnimation(animation);
+            ed_login_pwd.startAnimation(animation);
+            vib.vibrate(120);
+            return false;
+        }
+        return true;
+    }
+
+    private boolean checkEmail() {
+        if (ed_login_email.getText().toString().trim().isEmpty()) {
+            ed_login_email.setError("vacio");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean checkPassword() {
+        if (ed_login_pwd.getText().toString().trim().isEmpty()) {
+            ed_login_pwd.setError("vacio");
+            return false;//el campo esta vacio
+        }
+        return true;
+    }
 
 
+    private void gotoMainActivity(String email, String password) {
+
+        mAuth
+                .signInWithEmailAndPassword(email, password)
+                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        Intent gotoMain = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(gotoMain);
+                        finish();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+    }
 }

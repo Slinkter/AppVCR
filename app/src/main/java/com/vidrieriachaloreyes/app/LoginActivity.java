@@ -3,7 +3,6 @@ package com.vidrieriachaloreyes.app;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.nfc.Tag;
 import android.os.Vibrator;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -25,9 +24,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static final String TAG = LoginActivity.class.getSimpleName();
     //
-    private Button btnIngresar;
-    private Button btnRegistrar;
+    private Button btn_Ingresar;
+    private Button btn_Registrar;
     //
     private Animation animation;
     private Vibrator vib;
@@ -49,6 +49,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
+        init();
+    }
+
+    private void init() {
+        Log.e(TAG, "COMENZAMOS !!!");
         //
         mAuth = FirebaseAuth.getInstance();
         //
@@ -58,36 +63,33 @@ public class LoginActivity extends AppCompatActivity {
         ed_login_email = findViewById(R.id.et_mail);
         ed_login_pwd = findViewById(R.id.et_password);
         checkbox_session = findViewById(R.id.checkbox_session);
-        btnIngresar = findViewById(R.id.btnIngresar);
-        btnRegistrar = findViewById(R.id.btnRegistrar);
+        //
+        btn_Ingresar = findViewById(R.id.btnIngresar);
+        btn_Registrar = findViewById(R.id.btnRegistrar);
 
-        btnIngresar.setOnClickListener(new View.OnClickListener() {
+        btn_Ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (verificarLogin()) {
                     String email = ed_login_email.getText().toString();
                     String pass = ed_login_pwd.getText().toString();
-                    Log.e("mm", email);
-                    Log.e("nn", pass);
                     gotoMainActivity(email, pass);
                 }
-
-
             }
         });
 
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+        btn_Registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(goToRegister);
+                goToRegister();
+
             }
         });
-
 
     }
 
+    //-----------------------------------------
+    // Login Activity
     private boolean verificarLogin() {
         Log.e("verficarLogin", " Start");
         if (!checkEmail()) {
@@ -107,7 +109,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private boolean checkEmail() {
         if (ed_login_email.getText().toString().trim().isEmpty()) {
-            ed_login_email.setError("vacio");
+            ed_login_email.setError("Ingrese su correo ");
             return false;
         }
         return true;
@@ -115,12 +117,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private boolean checkPassword() {
         if (ed_login_pwd.getText().toString().trim().isEmpty()) {
-            ed_login_pwd.setError("vacio");
+            ed_login_pwd.setError("Ingrese su contraseña");
             return false;//el campo esta vacio
         }
         return true;
     }
-
 
     private void gotoMainActivity(String email, String password) {
 
@@ -141,5 +142,13 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    //-----------------------------------------
+    // Register Activity
+    private void goToRegister() {
+        Intent goToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(goToRegister);
+        finish();
     }
 }

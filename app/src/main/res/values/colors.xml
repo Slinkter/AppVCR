@@ -13,4 +13,12 @@
     <color name="secondaryDarkColor">#001970</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
+
+
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_green">#00E676</color>
+    <color name="bg_blue">#00E5FF</color>
+    <color name="bg_red">#b71c1c</color>
+
+
 </resources>

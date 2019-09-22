@@ -117,6 +117,39 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:onClick="btn_Registar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle_04"
+                android:text="Registar"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+            <Button
+                android:onClick="btn_Regresar"
+                android:id="@+id/btnRegistrar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle_01"
+                android:text="Regresar"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

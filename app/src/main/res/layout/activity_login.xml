@@ -4,90 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
+
+    android:background="@color/bg_white"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="140dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:src="@drawable/logovcr" />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_mail"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:ems="8"
-            android:gravity="center"
-            android:hint="Correo"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/primaryColor"
-            android:textColorHint="@color/primaryColor"
-            android:textSize="20dp"
-            app:met_baseColor="@color/primaryColor"
-            app:met_floatingLabel="highlight"
-            app:met_primaryColor="@color/primaryColor"
-            app:met_singleLineEllipsis="false" />
+            android:gravity="center">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="20dp"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:textColor="@color/primaryColor"
-            android:textColorHint="@color/primaryColor"
-            android:textSize="20dp"
-            app:met_baseColor="@color/primaryColor"
-            app:met_floatingLabel="highlight"
-            app:met_primaryColor="@color/primaryColor"
-            app:met_singleLineEllipsis="false" />
-
-        <CheckBox
-            android:id="@+id/checkbox_session"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:text="Recordarme " />
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="140dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logovcr" />
+        </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:padding="10dp"
-            android:weightSum="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+                app:met_baseColor="@color/primaryColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primaryColor"
+                app:met_singleLineEllipsis="false" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="8"
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/primaryColor"
+                android:textColorHint="@color/primaryColor"
+
+                app:met_baseColor="@color/primaryColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primaryColor"
+                app:met_singleLineEllipsis="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/btnIngresar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttonstyle_01"
                 android:text="Ingresar"
-                android:layout_marginRight="20dp"
                 android:textColor="#FFF"
                 android:textSize="12dp" />
 

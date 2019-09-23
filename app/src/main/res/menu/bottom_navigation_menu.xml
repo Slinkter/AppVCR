@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_f1"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/navigation_f2"
+        android:icon="@drawable/ic_linear_scale_black_24dp"
+        android:title="Nosotros" />
+
+    <item
+        android:id="@+id/navigation_f3"
+        android:icon="@drawable/ic_layers_black_24dp"
+        android:title="Servicios" />
+
+    <item
+        android:id="@+id/navigation_f4"
+        android:icon="@drawable/ic_work_black_24dp"
+        android:title="Contacto" />
+    <item
+        android:id="@+id/navigation_f5"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Clientes" />
+
+</menu>

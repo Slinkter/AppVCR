@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
     //-----------------------------------------
     // Login Activity
     private boolean verificarLogin() {
-        Log.e("verficarLogin", " Start");
+        Log.e(TAG, " verificarLogin");
         if (!checkEmail()) {
             ed_login_email.setAnimation(animation);
             ed_login_email.startAnimation(animation);

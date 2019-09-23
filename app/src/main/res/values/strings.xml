@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">VCRAPP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">Av. de los Condóres Nro. 486</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

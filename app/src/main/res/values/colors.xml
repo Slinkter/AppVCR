@@ -20,5 +20,7 @@
     <color name="bg_blue">#00E5FF</color>
     <color name="bg_red">#b71c1c</color>
 
+    <color name="login_color">#BBBBBB</color>
+
 
 </resources>

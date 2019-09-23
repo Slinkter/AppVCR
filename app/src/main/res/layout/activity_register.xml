@@ -33,7 +33,7 @@
             android:textSize="24sp" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_dni"
+            android:id="@+id/et_dni_r"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -52,14 +52,14 @@
             app:met_singleLineEllipsis="false" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_fullName"
+            android:id="@+id/et_fullName_r"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:gravity="center"
             android:hint="Nombre"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:maxLength="24"
             android:textColor="@color/primaryColor"
             android:textColorHint="@color/primaryColor"
@@ -71,7 +71,7 @@
 
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_mail"
+            android:id="@+id/et_mail_r"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -90,7 +90,7 @@
             app:met_singleLineEllipsis="false" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/et_password"
+            android:id="@+id/et_password_r"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -107,15 +107,6 @@
             app:met_primaryColor="@color/primaryColor"
             app:met_singleLineEllipsis="false" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,7 +118,7 @@
             android:weightSum="2">
 
             <Button
-                android:onClick="btn_Registar"
+                android:id="@+id/btn_registar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"

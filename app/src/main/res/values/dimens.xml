@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textsize_register">15sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_big">30sp</dimen>
+
+    <dimen name="f3_ancho_item">129dp</dimen>
+    <dimen name="f3_altura_item">155dp</dimen>
+    <dimen name="f3_radius_item">10dp</dimen>
+    <dimen name="f3_margin_text">5dp</dimen>
 </resources>

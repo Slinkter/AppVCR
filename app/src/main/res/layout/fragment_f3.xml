@@ -56,6 +56,7 @@
                             android:id="@+id/prueba1"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_1"
                             android:baselineAligned="false" />
 
                         <TextView
@@ -82,6 +83,7 @@
                         android:orientation="vertical">
 
                         <Button
+                            android:background="@drawable/ic_windows_2"
                             android:id="@+id/prueba3"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
@@ -118,7 +120,7 @@
                         android:orientation="vertical">
 
                         <Button
-
+                            android:background="@drawable/ic_windows_3"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:baselineAligned="false" />
@@ -147,7 +149,7 @@
                         android:orientation="vertical">
 
                         <Button
-
+                            android:background="@drawable/ic_windows_4"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:baselineAligned="false" />
@@ -185,6 +187,7 @@
                         android:orientation="vertical">
 
                         <Button
+                            android:background="@drawable/ic_windows_5"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:baselineAligned="false" />
@@ -215,6 +218,7 @@
                         <Button
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_6"
                             android:baselineAligned="false" />
 
                         <TextView

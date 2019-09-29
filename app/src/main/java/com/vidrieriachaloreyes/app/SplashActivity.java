@@ -9,7 +9,7 @@ import java.util.TimerTask;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long SPLASH_SCREEN_DELAY = 1500;
+    private static final long SPLASH_SCREEN_DELAY = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

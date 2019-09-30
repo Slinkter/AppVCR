@@ -36,14 +36,14 @@
             android:orientation="vertical">
 
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/et_mail"
+                android:id="@+id/et_mail_f5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:ems="8"
                 android:gravity="center"
-                android:hint="Email"
+                android:hint="Usuario"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/login_color"
                 android:textColorHint="@color/login_color"
@@ -53,7 +53,7 @@
                 app:met_singleLineEllipsis="false" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/et_password"
+                android:id="@+id/et_password_f5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -81,10 +81,10 @@
             android:weightSum="2">
 
             <Button
-                android:id="@+id/btnIngresar"
+
+                android:id="@+id/btn_Cliente_Ingresar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
                 android:background="@drawable/buttonstyle_01"
                 android:text="Ingresar"

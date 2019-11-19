@@ -25,7 +25,6 @@ import org.w3c.dom.Text;
 
 public class F4 extends Fragment implements OnMapReadyCallback {
 
-
     private GoogleMap mMap;
     SupportMapFragment mapFragment;
 
@@ -34,18 +33,11 @@ public class F4 extends Fragment implements OnMapReadyCallback {
 
 
 
-    public F4() {
-
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_f4, container, false);
         tv_contancto_tel = view.findViewById(R.id.tv_contancto_tel);
         tv_contancto_gmail = view.findViewById(R.id.tv_contanto_gmail);
-
-
 
         tv_contancto_tel.setOnClickListener(new View.OnClickListener() {
             @Override

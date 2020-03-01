@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/bg_white"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp">
@@ -19,54 +20,57 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:weightSum="3">
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
-                android:gravity="center"
                 android:id="@+id/tv_contancto_tel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_whatsapp"
+                android:gravity="center"
 
                 android:textSize="@dimen/text_micro" />
 
         </LinearLayout>
+
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
             <TextView
-                android:gravity="center"
                 android:id="@+id/tv_contanto_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_gmail"
+                android:gravity="center"
 
                 android:textSize="@dimen/text_micro" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
             <TextView
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_location"
+                android:gravity="center"
                 android:textSize="@dimen/text_micro" />
         </LinearLayout>
 
@@ -76,9 +80,9 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
-        app:cardCornerRadius="15dp">
+        app:cardUseCompatPadding="true">
 
         <fragment
             android:id="@+id/mapContacto"
@@ -87,8 +91,6 @@
             android:layout_height="match_parent"
             tools:context=".Map.MapsActivity" />
     </android.support.v7.widget.CardView>
-
-
 
 
 </LinearLayout>

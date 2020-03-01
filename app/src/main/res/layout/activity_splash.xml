@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
 
     <ImageView
-        android:src="@drawable/v1"
-        android:layout_width="115dp"
-        android:layout_height="115dp"/>
+        android:layout_width="315dp"
+        android:layout_height="315dp"
+        android:src="@drawable/vcrlogored" />
 
 
 </LinearLayout>

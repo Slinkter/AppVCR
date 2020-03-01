@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/bg_white"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -46,8 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:textColor="@color/primaryColor"
             android:text="Misión"
+            android:textColor="@color/primaryColor"
             android:textSize="@dimen/text_small" />
 
         <View
@@ -60,8 +61,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:textColor="@color/secondaryDarkColor"
             android:text="Nuesta misión es ofrecer un servicio calidad en la instalación de cristales templados en Ventanas,Mamparas,Puerta de Duchas ,Techo de Policarbonato,Parapeto y muro de cortina.    "
+            android:textColor="@color/secondaryDarkColor"
             android:textSize="@dimen/text_micro" />
 
 
@@ -79,8 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:textColor="@color/primaryColor"
             android:text="Visión"
+            android:textColor="@color/primaryColor"
             android:textSize="@dimen/text_small" />
 
         <View
@@ -93,13 +94,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:textColor="@color/secondaryDarkColor"
             android:text=" Ser la empresa proveedora de servicio de instalación de cristales templados para personales naturales y empresas"
+            android:textColor="@color/secondaryDarkColor"
             android:textSize="@dimen/text_micro" />
 
 
     </LinearLayout>
-
 
 
 </LinearLayout>

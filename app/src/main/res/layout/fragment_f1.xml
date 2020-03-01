@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/bg_white"
     android:gravity="center"
     android:orientation="vertical"
     android:weightSum="10">
@@ -16,26 +17,21 @@
         android:gravity="center"
         android:orientation="vertical">
 
+
         <ImageView
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:src="@drawable/v1" />
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:src="@drawable/vcrlogored" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vidriería"
-            android:textColor="@color/secondaryDarkColor"
-            android:textSize="50dp">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chalo Reyes"
-            android:textColor="@color/primaryColor"
-            android:textSize="50dp">
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="VCR Glass"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="39dp"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -43,7 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Glass &amp; Mirror \n Shop">
+            android:text="Glass &amp; Mirror \n Shop"
+            android:textColor="@color/primaryLightColor">
 
         </TextView>
     </LinearLayout>
@@ -54,18 +51,19 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/jhonny"
-            android:autoLink="web"
-            android:textSize="12sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
+            android:autoLink="web"
             android:gravity="center"
-            android:text="by\nJhonny Cave" />
+            android:text="by\nJhonny Cave"
+            android:textSize="12sp" />
     </LinearLayout>
 
 

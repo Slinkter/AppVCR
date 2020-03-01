@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Fragment.F5">
@@ -92,7 +93,6 @@
                 android:textSize="12dp" />
 
             <Button
-                android:visibility="gone"
                 android:id="@+id/btnRegistrar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,7 +100,8 @@
                 android:background="@drawable/buttonstyle_02"
                 android:text="Registrar"
                 android:textColor="#FFF"
-                android:textSize="12dp" />
+                android:textSize="12dp"
+                android:visibility="gone" />
 
         </LinearLayout>
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/bg_white"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp">
@@ -83,10 +84,10 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:background="@drawable/ic_windows_2"
                             android:id="@+id/prueba3"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_2"
                             android:baselineAligned="false" />
 
                         <TextView
@@ -120,9 +121,9 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:background="@drawable/ic_windows_3"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_3"
                             android:baselineAligned="false" />
 
                         <TextView
@@ -149,9 +150,9 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:background="@drawable/ic_windows_4"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_4"
                             android:baselineAligned="false" />
 
                         <TextView
@@ -187,9 +188,9 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:background="@drawable/ic_windows_5"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:background="@drawable/ic_windows_5"
                             android:baselineAligned="false" />
 
                         <TextView
